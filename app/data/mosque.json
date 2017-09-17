@@ -1,0 +1,420 @@
+var mosqueJSON = [{
+	"name": "Abdul Aleem Siddique",
+	"address": "90, Lor K Telok Kurau",
+	"postal": "Singapore 425723",
+	"tel": "6345 6504",
+	"fax": "6345 0274"
+}, {
+	"name": "Abdul Gafoor",
+	"address": "41, Dunlop Street",
+	"postal": "Singapore 209369",
+	"tel": "6295 4209",
+	"fax": "6293 3486"
+}, {
+	"name": "Abdul Hamid",
+	"address": "10, Gentle Road",
+	"postal": "Singapore 309194",
+	"tel": "6251 2729",
+	"fax": "6259 1425"
+}, {
+	"name": "Ahmad",
+	"address": "2, Lorong Sarhad",
+	"postal": "Singapore 119173",
+	"tel": "6479 6442",
+	"fax": "6479 8487"
+}, {
+	"name": "Ahmad Ibrahim",
+	"address": "15, Jalan Ulu Seletar",
+	"postal": "Singapore 769227",
+	"tel": "6454 0848",
+	"fax": "6454 4770"
+}, {
+	"name": "Al Taqua",
+	"address": "11A, Jalan Bilal Bedok",
+	"address1": "Off Bedok Road",
+	"postal": "Singapore 468862",
+	"tel": "6442 7704",
+	"fax": "6445 4732"
+}, {
+	"name": "Al-Abdul Razak",
+	"address": "30, Jalan Ismail",
+	"postal": "Singapore 419285",
+	"tel": "6846 8404",
+	"fax": "6846 8403"
+}, {
+	"name": "Al-Abrar (Koochoo Pally)",
+	"address": "192, Telok Ayer Street",
+	"postal": "Singapore 068635",
+	"tel": "6220 6306"
+}, {
+	"name": "Al-Amin",
+	"address": "50, Telok Blangah Way",
+	"postal": "Singapore 098801",
+	"tel": "6272 5309",
+	"fax": "6270 2153"
+}, {
+	"name": "Al-Ansar",
+	"address": "155, Bedok North Avenue 1",
+	"postal": "Singapore 469751",
+	"tel": "6449 2420",
+	"fax": "6445 4702"
+}, {
+	"name": "Al-Falah",
+	"address": "22 Bideford Road",
+	"address1": "#01-01",
+	"postal": "Singapore 229923",
+	"tel": "6235 3172",
+	"fax": "6735 5580"
+}, {
+	"name": "Al-Firdaus",
+	"address": "11, Jalan Ibadat",
+	"postal": "Singapore 698955",
+	"tel": "6764 6334",
+	"fax": "6762 5328"
+}, {
+	"name": "Al-Huda",
+	"address": "34, Jalan Haji Alias",
+	"postal": "Singapore 268534",
+	"tel": "6468 4844",
+	"fax": "6463 9589"
+}, {
+	"name": "Al-Iman",
+	"address": "10, Bukit Panjang Ring Road",
+	"postal": "S(679943)",
+	"tel": "6769 0770",
+	"fax": "6769 8970"
+}, {
+	"name": "Al-Islah",
+	"address": "30, Punggol Field",
+	"postal": "Singapore 828812",
+	"tel": "6312 5194"
+}, {
+	"name": "Al-Istighfar",
+	"address": "2, Pasir Ris Walk",
+	"postal": "Singapore 518239",
+	"tel": "6583 8711",
+	"fax": "6583 8722"
+}, {
+	"name": "Al-Istiqamah",
+	"address": "2,Seranggon North Avenue 2",
+	"postal": "Singapore 555876",
+	"tel": "6281 4287",
+	"fax": "6281 3204"
+}, {
+	"name": "Alkaff Kampung Melayu",
+	"address": "200, Bedok Reservoir Road",
+	"postal": "Singapore 479221",
+	"tel": "6242 7244",
+	"fax": "6242 0112"
+}, {
+	"name": "Alkaff Upper Serangoon",
+	"address": "66, Pheng Geck Avenue",
+	"postal": "Singapore 348261",
+	"tel": "6280 0300",
+	"fax": "6288 9019"
+}, {
+	"name": "Al-Khair",
+	"address": "1, Teck Whye Crescent",
+	"postal": "Singapore 688847",
+	"tel": "6760 1139",
+	"fax": "6763 6028"
+}, {
+	"name": "Al-Mawaddah",
+	"address": "151 Compassvale Bow",
+	"postal": "Singapore 544997",
+	"tel": "6489 0224",
+	"fax": "6384 0403"
+}, {
+	"name": "Al-Mukminin",
+	"address": "271, Jurong East Street 21",
+	"postal": "Singapore 609603",
+	"tel": "6567 7777",
+	"fax": "6567 3441"
+}, {
+	"name": "Al-Muttaqin",
+	"address": "5140, Ang Mo Kio Central Avenue 6",
+	"postal": "Singapore 569844",
+	"tel": "6454 7472",
+	"fax": "6451 0781"
+}, {
+	"name": "Angullia",
+	"address": "265, Serangoon Road",
+	"postal": "Singapore 218099",
+	"tel": "6295 1478"
+}, {
+	"name": "An-Nahdhah",
+	"address": "9A Bishan Street 14",
+	"postal": "Singapore 579786",
+	"tel": "6354 3138",
+	"fax": "6354 3139"
+}, {
+	"name": "An-Nur",
+	"address": "6, Admiralty Road",
+	"postal": "Singapore 739983",
+	"tel": "6363 1383",
+	"fax": "6365 4449"
+}, {
+	"name": "Ar-Raudhah",
+	"address": "30, Bukit Batok East Ave 2",
+	"postal": "Singapore 659919",
+	"tel": "6899 5840",
+	"fax": "6564 1924"
+}, {
+	"name": "Assyafaah",
+	"address": "1 Admiralty Lane",
+	"postal": "Singapore 75762",
+	"tel": "6756 3008",
+	"fax": "6753 0095"
+}, {
+	"name": "Assyakirin",
+	"address": "550, Yung An Road",
+	"postal": "Singapore 618617",
+	"tel": "6268 1846",
+	"fax": "6268 9725"
+}, {
+	"name": "Baalwie",
+	"address": "2, Lewis Road",
+	"postal": "Singapore 258590",
+	"tel": "6732 6170",
+	"fax": "6735 2319"
+}, {
+	"name": "Bencoolen",
+	"address": "51, Bencoolen Street, #01-01",
+	"postal": "Singapore 189630",
+	"tel": "6333 3016",
+	"fax": "6338 2579"
+}, {
+	"name": "Burhani",
+	"address": "39, Hill Street",
+	"postal": "Singapore 179364",
+	"tel": "6334 3712"
+}, {
+	"name": "Darul Aman",
+	"address": "1, Jalan Eunos",
+	"postal": "Singapore 419493",
+	"tel": "6744 5544",
+	"fax": "6744 4325"
+}, {
+	"name": "Darul Ghufran",
+	"address": "503, Tampines Avenue 5",
+	"postal": "Singapore 529651",
+	"tel": "6786 5545",
+	"fax": "6786 5485"
+}, {
+	"name": "Darul Makmur",
+	"address": "950, Yishun Ave 2",
+	"postal": "Singapore 769099",
+	"tel": "6752 1402",
+	"fax": "6752 2743"
+}, {
+	"name": "Darussalam",
+	"address": "3002, Commonwealth Avenue West",
+	"postal": "Singapore 129579",
+	"tel": "6777 0028",
+	"fax": "6774 2603"
+}, {
+	"name": "En-Naeem",
+	"address": "120, Tampines Road",
+	"postal": "Singapore 535136",
+	"tel": "6287 9225",
+	"fax": "6382 5852"
+}, {
+	"name": "Haji Mohd Salleh",
+	"address": "245, Geylang Road",
+	"postal": "Singapore 389304",
+	"tel": "6846 0857",
+	"fax": "6846 4417"
+}, {
+	"name": "Haji Muhammad Salleh",
+	"address": "37, Palmer Road",
+	"postal": "Singapore 079424",
+	"tel": "6220 9257",
+	"fax": "6323 1139"
+}, {
+	"name": "Haji Yusoff",
+	"address": "2, Hillside Drive",
+	"address1": "Upper Serangoon Road",
+	"postal": "Singapore 548920",
+	"tel": "6284 5459",
+	"fax": "6284 5814"
+}, {
+	"name": "Hajjah Fatimah",
+	"address": "4001, Beach Road",
+	"postal": "Singapore 199584",
+	"tel": "6297 2774"
+}, {
+	"name": "Hajjah Rahimabi",
+	"address": "76, Kim Keat Road",
+	"postal": "Singapore 328835",
+	"tel": "6255 8262",
+	"fax": "6255 6407"
+}, {
+	"name": "Hang Jebat",
+	"address": "100, Jalan Hang Jebat",
+	"postal": "Singapore 139533",
+	"tel": "6471 0728",
+	"fax": "6471 1912"
+}, {
+	"name": "Hasanah",
+	"address": "492, Teban Gardens Road",
+	"postal": "Singapore 608878",
+	"tel": "6561 7990",
+	"fax": "6566 5537"
+}, {
+	"name": "Hussein Sulaiman",
+	"address": "394, Pasir Panjang Road",
+	"postal": "Singapore 11873"
+}, {
+	"name": "Jamae Chulia",
+	"address": "218, South Bridge Road",
+	"postal": "Singapore 058767",
+	"tel": "6221 4165",
+	"fax": "6225 7425"
+}, {
+	"name": "Jamek Queenstown",
+	"address": "946, Margaret Drive",
+	"postal": "Singapore 149309",
+	"tel": "6472 7298",
+	"fax": "6474 0373"
+}, {
+	"name": "Jamiyah Ar-Rabitah",
+	"address": "601, Tiong Bahru Road",
+	"postal": "Singapore 158787",
+	"tel": "6273 3848",
+	"fax": "6272 3848"
+}, {
+	"name": "Kampong Delta",
+	"address": "10, Delta Avenue",
+	"postal": "Singapore 169831",
+	"tel": "6272 1750",
+	"fax": "6273 0094"
+}, {
+	"name": "Kampong Siglap",
+	"address": "451, Marine Parade Road",
+	"postal": "Singapore 449283",
+	"tel": "6243 7060/61",
+	"fax": "6441 0634"
+}, {
+	"name": "Kassim",
+	"address": "450, Changi Road",
+	"postal": "Singapore 419877",
+	"tel": "6440 4742",
+	"fax": "6440 3947"
+}, {
+	"name": "Khadijah",
+	"address": "583, Geylang Road",
+	"postal": "Singapore 389522",
+	"tel": "6747 5607",
+	"fax": "6747 5929"
+}, {
+	"name": "Khalid",
+	"address": "130, Joo Chiat Road",
+	"postal": "Singapore 427727",
+	"tel": "6345 2884",
+	"fax": "6346 1279"
+}, {
+	"name": "Maarof ",
+	"address": "20, Jurong West Street 26",
+	"postal": "Singapore 648125",
+	"tel": "6515 5033",
+	"fax": "6515 5034"
+}, {
+	"name": "Malabar",
+	"address": "471, Victoria Street",
+	"postal": "Singapore 198370",
+	"tel": "6294 3862",
+	"fax": "6392 3981"
+}, {
+	"name": "Moulana Mohd Ali",
+	"address": "UOB Plaza",
+	"address1": "80, Raffles Place, #B1-01",
+	"postal": "Singapore 048624",
+	"tel": "6536 5238",
+	"fax": "6536 5247"
+}, {
+	"name": "Muhajirin",
+	"address": "275 Braddell Road",
+	"postal": "Singapore 579704",
+	"tel": "6256 1166",
+	"fax": "6256 1156"
+}, {
+	"name": "Mujahidin",
+	"address": "590, Stirling Road",
+	"postal": "Singapore 148952",
+	"tel": "6473 7400",
+	"fax": "6473 6241"
+}, {
+	"name": "Mydin",
+	"address": "67, Jalan Lapang",
+	"postal": "Singapore 419007",
+	"tel": "6243 2129",
+	"fax": "6243 2721"
+}, {
+	"name": "Omar Kampong Melaka",
+	"address": "10, Keng Cheow Street",
+	"postal": "Singapore 059607",
+	"tel": "6532 6764",
+	"fax": "6536 2339"
+}, {
+	"name": "Omar Salmah",
+	"address": "441B, Jalan Mashhor",
+	"postal": "Singapore 299173",
+	"tel": "6250 0120"
+}, {
+	"name": "Pertempatan Melayu Sembawang",
+	"address": "27-B, Jalan Mempurong",
+	"postal": "Singapore 759055",
+	"tel": "6257 7614"
+}, {
+	"name": "Pulau Bukom",
+	"address": "Pulau Bukom",
+	"address1": "P O Box 1908",
+	"postal": "Singapore 903808",
+	"fax": "6263 4088"
+}, {
+	"name": "Pusara Aman",
+	"address": "11, Lim Chu Kang Road",
+	"address1": "Muslim Cemetary",
+	"postal": "Singapore 719452",
+	"tel": "6792 9378"
+}, {
+	"name": "Salim Mattar",
+	"address": "No 1 Mattar Road",
+	"postal": "Singapore 387713",
+	"tel": "6749 2382",
+	"fax": "6743 2619"
+}, {
+	"name": "Sultan",
+	"address": "3, Muscat Street",
+	"postal": "Singapore 198833",
+	"tel": "6293 4405",
+	"fax": "6293 2463"
+}, {
+	"name": "Tasek Utara",
+	"address": "46, Bristol Road",
+	"postal": "Singapore 219852",
+	"tel": "6293 8351"
+}, {
+	"name": "Temenggong",
+	"address": "30, Telok Blangah Road",
+	"postal": "Singapore 098827",
+	"tel": "6273 6043"
+}, {
+	"name": "Tentera Di Raja",
+	"address": "81, Clementi Road",
+	"postal": "Singapore 129797",
+	"tel": "6776 5612",
+	"fax": "6778 3897"
+}, {
+	"name": "Wak Tanjong",
+	"address": "25, Paya Lebar Road",
+	"postal": "Singapore 409004",
+	"tel": "6747 2743",
+	"fax": "6747 3384"
+}, {
+	"name": "Yusof Ishak",
+	"address": "10, Woodlands Drive 17",
+	"postal": "Singapore 737740",
+	"tel": "6893 0093",
+	"fax": "6893 0051"
+}];

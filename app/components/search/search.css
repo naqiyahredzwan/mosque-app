@@ -1,0 +1,27 @@
+.jumbotron .container >h2 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.btn-search {
+  background-color: #6c267e !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 13px 16px !important;
+  border-radius: 0px !important;
+}
+
+.input-lg,
+.form-control {
+	border-radius: 0px !important;
+}
+
+.btn-default {
+	border-color: none !important;
+}
