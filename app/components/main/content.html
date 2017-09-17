@@ -1,31 +1,74 @@
 <div class="container" ng-repeat="option in View1Ctrl.data">
-  <div class="row">
-    <div class="col-sm-4 col-md-4">
+  <div layout-gt-xs="row" layout-align="stretch">
+    <div flex="30">
 
     </div>
 
-    <div class="col-sm-8 col-md-8">
-      <div class="thumbnail">
-        <img src="" alt="" style="width:100%">
+    <div flex-gt-xs>
 
-        <div class="row">
-          <div class="col-sm-8 col-md-8">
-            <div class="caption">
-              <h5>TUE, 26 Sept 7:15 PM</h5>
-              <p>{{option.name}}</p>
-              <p>{{option.address}}</p>
-              <p>Class 1</p>
-              <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
-            </div>
-          </div>
+      <md-card>
+        <img ng-src="{{imagePath}}" class="md-card-image">
+        
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline" ng-if="option.name">{{option.name}}</span>
+            <span class="next-line" ng-if="option.address">{{option.address}}</span><!-- 
+            <span class="next-line" ng-if="option.address1">{{option.address1}}</span>
+            <span class="next-line" ng-if="option.postal">{{option.postal}}</span>
+            <span class="next-line" ng-if="option.tel">Tel: {{option.tel}}</span>
+            <span class="next-line" ng-if="option.tel">Fax: {{option.fax}}</span> -->
+          </md-card-title-text>
+          <!-- <md-card-title-media>
+            <div class="md-media-md card-media"></div>
+          </md-card-title-media> -->
 
-          <div class="col-sm-4 col-md-4">
-            <div class="caption text-right">
-              <button class="btn btn-default btn-book btn-lg" type="button">Enrol</button>
-            </div>
-          </div>
-        </div>
-      </div>
+          
+        </md-card-title>
+
+        <md-card-header>
+          <md-card-avatar>
+            <img class="md-user-avatar" src="assets/ic_account_circle_black_48px.svg"/>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-title">User</span>
+            <span class="md-subhead">subhead</span>
+          </md-card-header-text>
+        </md-card-header>
+<!-- 
+        <md-card-header>
+          <md-card-avatar>
+            <md-icon class="md-avatar-icon" md-svg-icon="assets/ic_account_circle_black_48px.svg"></md-icon>
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-title">User</span>
+            <span class="md-subhead">subhead</span>
+          </md-card-header-text>
+        </md-card-header> -->
+
+        <md-card-content>
+          <p>
+            Stage 1 covers the fundamentals of Quran'ic Arabic grammar and sarf (word morphology). Go beyond the translation as you learn how understanding sentence structure, word order, and word choice reveals the deeper meanings of the surahs we read every day. 
+          </p>
+        </md-card-content>
+
+        <md-card-actions layout="row" layout-align="end center">
+          <!-- <md-card-icon-actions>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+              <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+            </md-button>
+          </md-card-icon-actions> -->
+
+          <md-button class="md-book">Enroll</md-button>
+          <!-- <md-button class="md-icon-button" aria-label="Use Android">
+              <md-icon class="md-add-icon" md-svg-src="assets/ic_add_white_48px.svg"></md-icon>
+              <h3>Enrol</h3>
+          </md-button> -->
+        </md-card-actions>
+
+      </md-card>
     </div>
   </div>
 </div>

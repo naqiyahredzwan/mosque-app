@@ -47,3 +47,7 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+body {
+  background-color: #fff !important;
+}

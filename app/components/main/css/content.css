@@ -1,28 +1,37 @@
-.btn-book {
-  background-color: #6c267e !important;
+.main-bg {
+  background-color: #fff !important;
+}
+
+.md-card-image {
+  background-color: #eee;
+  /*height: 100px;*/
+}
+
+.card-media {
+  background-color: #999999; 
+}
+
+svg {
+    fill: inherit;
+}
+
+md-card-avatar {
+  margin-right: 20px !important;
+}
+
+.md-add-icon {
+  fill: #13a9bf !important;
+}
+
+.md-book {
+  background-color: #13a9bf !important;
   color: #fff !important;
   text-transform: uppercase !important;
   font-weight: 600 !important;
   font-size: 14px !important;
 }
 
-.thumbnail >img {
-  background-color: #ddd;
-  height: 115px !important;
-}
-
-.form-control {
-  border-radius: 0px !important;
-}
-
-.thumbnail .caption >button {
-  margin-top: 80px;
-  padding: 8px 35px !important;
-  background-color: #13a9bf !important;
-}
-
-@media only screen and (max-width: 500px) {
-    .thumbnail .caption >button {
-	 	margin-top: 0px !important;
-	}
+.next-line {
+    display: block;
+    /*white-space:nowrap;*/
 }

@@ -1,45 +1,40 @@
 <div class="container">
 	<div layout-gt-xs="row">
-		<div flex="30">
-			<md-input-container class="filter-container">
-	      		<md-datepicker ng-model="ctrl.myDate" md-placeholder="Enter date"></md-datepicker>
+		<div flex-gt-xs>
+			<md-input-container class="md-block">
+	      		<md-datepicker ng-model="ctrl.myDate" md-placeholder="-- / -- / --" md-open-on-focus md-hide-icons="calendar"></md-datepicker>
 	  		</md-input-container>
 	    </div>
 
 		<div flex-gt-xs>
-			<md-input-container>
-				<label>Location</label>
-				<md-select ng-model="size">
-				  <!-- <md-option ng-repeat="size in sizes" value="{{size}}">{{size}}</md-option> -->
-				</md-select>
-			</md-input-container>
+			<md-select ng-model="weapon" placeholder="District" class="md-no-underline">
+	          <md-option value="axe">North</md-option>
+	          <md-option value="sword">South</md-option>
+	          <md-option value="wand">East</md-option>
+	          <md-option value="pen">West</md-option>
+	        </md-select>
 		</div>
 
-	    <div flex-gt-xs>
-			<md-input-container>
-				<label>Time</label>
-				<md-select ng-model="size">
-				  <!-- <md-option ng-repeat="size in sizes" value="{{size}}">{{size}}</md-option> -->
-				</md-select>
-			</md-input-container>
+		<!-- <div flex="30">
+	        <md-time-picker ng-model="time.twelve" message="message" md-hide-icons="all"></md-time-picker>
+		</div> -->
+
+		<div flex-gt-xs>
+			<md-select ng-model="weapon" placeholder="Categories" class="md-no-underline">
+	          <md-option value="axe">Stage 1</md-option>
+	          <md-option value="sword">Stage 2</md-option>
+	          <md-option value="wand">Stage 3</md-option>
+	          <md-option value="pen">Stage 4</md-option>
+	        </md-select>
 		</div>
 
 		<div flex-gt-xs>
-			<md-input-container>
-				<label>Categories</label>
-				<md-select ng-model="size">
-				  <!-- <md-option ng-repeat="size in sizes" value="{{size}}">{{size}}</md-option> -->
-				</md-select>
-			</md-input-container>
-		</div>
-
-		<div flex-gt-xs>
-			<md-input-container>
-				<label>Language</label>
-				<md-select ng-model="size">
-				  <!-- <md-option ng-repeat="size in sizes" value="{{size}}">{{size}}</md-option> -->
-				</md-select>
-			</md-input-container>
+			<md-select ng-model="weapon" placeholder="Language" class="md-no-underline">
+	          <md-option value="axe">English</md-option>
+	          <md-option value="sword">Malay</md-option>
+	          <md-option value="wand">Chinese</md-option>
+	          <md-option value="pen">Tamil</md-option>
+	        </md-select>
 		</div>
 	</div>
 </div>
