@@ -1,4 +1,4 @@
-<div class="container" ng-repeat="option in View1Ctrl.data">
+<div class="container" ng-repeat="option in View1Ctrl.data | filter: View1Ctrl.filter.search">
   <div layout-gt-xs="row" layout-align="stretch">
     <div flex="30">
 
