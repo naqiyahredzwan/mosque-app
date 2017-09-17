@@ -2,12 +2,12 @@
 	<div layout-gt-xs="row">
 		<div flex-gt-xs>
 			<md-input-container class="md-block">
-	      		<md-datepicker ng-model="ctrl.myDate" md-placeholder="-- / -- / --" md-open-on-focus md-hide-icons="calendar"></md-datepicker>
+	      		<md-datepicker ng-model="View1Ctrl.select.date" md-placeholder="-- / -- / --" md-open-on-focus md-hide-icons="calendar"></md-datepicker>
 	  		</md-input-container>
 	    </div>
 
-		<div flex-gt-xs>
-			<md-select ng-model="weapon" placeholder="District" class="md-no-underline">
+		<div flex-gt-xs flex-offset="5">
+			<md-select ng-model="View1Ctrl.select.district" placeholder="District" class="md-no-underline">
 	          <md-option value="axe">North</md-option>
 	          <md-option value="sword">South</md-option>
 	          <md-option value="wand">East</md-option>
@@ -19,8 +19,8 @@
 	        <md-time-picker ng-model="time.twelve" message="message" md-hide-icons="all"></md-time-picker>
 		</div> -->
 
-		<div flex-gt-xs>
-			<md-select ng-model="weapon" placeholder="Categories" class="md-no-underline">
+		<div flex-gt-xs flex-offset="10">
+			<md-select ng-model="View1Ctrl.select.category" placeholder="Categories" class="md-no-underline">
 	          <md-option value="axe">Stage 1</md-option>
 	          <md-option value="sword">Stage 2</md-option>
 	          <md-option value="wand">Stage 3</md-option>
@@ -28,8 +28,8 @@
 	        </md-select>
 		</div>
 
-		<div flex-gt-xs>
-			<md-select ng-model="weapon" placeholder="Language" class="md-no-underline">
+		<div flex-gt-xs flex-offset="10">
+			<md-select ng-model="View1Ctrl.select.language" placeholder="Language" class="md-no-underline">
 	          <md-option value="axe">English</md-option>
 	          <md-option value="sword">Malay</md-option>
 	          <md-option value="wand">Chinese</md-option>
