@@ -1,6 +1,6 @@
 <div class="container">
 	<div layout-gt-xs="row">
-		<div flex-gt-xs>
+		<div flex-gt-xs class="md-datepicker-flex">
 			<md-input-container class="md-block">
 	      		<md-datepicker ng-model="View1Ctrl.select.date" md-placeholder="-- / -- / --" md-open-on-focus md-hide-icons="calendar"></md-datepicker>
 	  		</md-input-container>
@@ -19,7 +19,7 @@
 	        <md-time-picker ng-model="time.twelve" message="message" md-hide-icons="all"></md-time-picker>
 		</div> -->
 
-		<div flex-gt-xs flex-offset="10">
+		<div flex-gt-xs flex-offset="5">
 			<md-select ng-model="View1Ctrl.select.category" placeholder="Categories" class="md-no-underline">
 	          <md-option value="axe">Stage 1</md-option>
 	          <md-option value="sword">Stage 2</md-option>
@@ -28,7 +28,7 @@
 	        </md-select>
 		</div>
 
-		<div flex-gt-xs flex-offset="10">
+		<div flex-gt-xs flex-offset="5">
 			<md-select ng-model="View1Ctrl.select.language" placeholder="Language" class="md-no-underline">
 	          <md-option value="axe">English</md-option>
 	          <md-option value="sword">Malay</md-option>
