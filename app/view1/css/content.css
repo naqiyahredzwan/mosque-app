@@ -25,4 +25,8 @@
     .thumbnail .caption >button {
 	  margin-top: 0px !important;
 	}
+
+	md-input-container {
+    	display: content !important; 
+	}
 }
