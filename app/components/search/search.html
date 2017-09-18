@@ -1,11 +1,35 @@
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   <div class="container">
     <h2>Uncover your next knowledge</h2>
     <div class="input-group">
       <input type="text" class="form-control input-lg" placeholder="Search for..." ng-model="View1Ctrl.filter.search">
       <span class="input-group-btn">
         <button class="btn btn-default btn-search btn-lg" type="button"><i class="material-icons">search</i></button>
+
+
+        <md-button class="md-raised"><md-icon md-svg-src="assets/ic_search_white_48px.svg"></md-icon></md-button>
       </span>
     </div>
   </div>
+</div> -->
+
+<!-- <div class="container"> -->
+	
+    <md-toolbar class="paper-shadow paper-toolbar">
+    	<div class="container">
+      	<div class="md-toolbar-tools search-bar">
+
+        <md-button class="md-icon-button" ng-click="View1Ctrl.submit()">
+          <md-icon>search</md-icon>
+        </md-button>
+
+        <md-input-container flex md-no-float class="search-container">
+          <!-- <label for="search">Search</label> -->
+          <input id="search-input" type="text" ng-model="View1Ctrl.filter.search" placeholder="Search" />
+        </md-input-container>
+      </div>
 </div>
+    </md-toolbar>
+<!-- </div> -->
+
+

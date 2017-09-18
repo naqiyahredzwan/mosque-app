@@ -26,3 +26,36 @@
 .btn-default {
 	border-color: none !important;
 }
+
+/*.search-bar { background-color: #222; }*/
+/*.search-bar * { color: white !important; }*/
+.search-bar input { 
+  /*border-bottom-color: white; */
+  border: 0px !important;
+}
+/*.md-errors-spacer { display:none; }*/
+
+.md-toolbar-tools {
+  background-color: #fff;
+}
+
+.search-container {
+    /*display: none !important;*/
+    margin: 20px 0px 0px !important;
+}
+
+.search-container >label {
+  font-weight: 400 !important
+}
+
+md-toolbar:not(.md-menu-toolbar) md-icon {
+  color: darkgray !important;
+}
+
+.paper-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.paper-toolbar {
+  background: #fff !important;
+}
