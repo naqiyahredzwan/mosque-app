@@ -4,7 +4,7 @@
 
 .md-card-image {
   background-color: #eee;
-  height: 100px;
+  /*height: 100px;*/
 }
 
 .card-media {
@@ -34,4 +34,11 @@ md-card-avatar {
 .next-line {
     display: block;
     /*white-space:nowrap;*/
+}
+
+.fixed-calendar {
+  padding: 8px !important;
+  /*width: 340px;*/
+  /*height: 340px;*/
+  /*display: block;*/
 }
