@@ -13,21 +13,16 @@
   </div>
 </div> -->
 
-<!-- <div class="container"> -->
-  
-    <md-toolbar class="paper-shadow paper-toolbar">
-      <div class="container">
-        <div class="md-toolbar-tools search-bar">
+<md-toolbar class="paper-shadow paper-toolbar">
+  <div class="container">
+    <div class="md-toolbar-tools search-bar">
+      <md-button class="md-icon-button">
+        <md-icon>search</md-icon>
+      </md-button>
 
-        <md-button class="md-icon-button" ng-click="View1Ctrl.submit()">
-          <md-icon>search</md-icon>
-        </md-button>
-
-        <md-input-container flex md-no-float>
-          <!-- <label for="search">Search</label> -->
-          <input id="search-input" type="text" ng-model="View1Ctrl.filter.search" placeholder="Search" />
-        </md-input-container>
-      </div>
-</div>
-    </md-toolbar>
-<!-- </div> -->
+      <md-input-container flex md-no-float>
+        <input id="search-input" type="text" ng-model="View1Ctrl.criteria.filter.search" placeholder="Search" />
+      </md-input-container>
+    </div>
+  </div>
+</md-toolbar>

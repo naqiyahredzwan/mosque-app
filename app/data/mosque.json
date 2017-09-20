@@ -1,4 +1,4 @@
-var mosqueJSON = [{
+var test = [{
 	"name": "Abdul Aleem Siddique",
 	"address": "90, Lor K Telok Kurau",
 	"postal": "Singapore 425723",
@@ -113,6 +113,7 @@ var mosqueJSON = [{
 	"tel": "6280 0300",
 	"fax": "6288 9019"
 }, {
+	"id": 1,
 	"name": "Al-Khair",
 	"address": "1, Teck Whye Crescent",
 	"postal": "Singapore 688847",
@@ -418,3 +419,14 @@ var mosqueJSON = [{
 	"tel": "6893 0093",
 	"fax": "6893 0051"
 }];
+
+var classes = [{
+	"mosque_id": "1",
+	"name": "Start @ Masjid",
+	"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Soalt Berjemaah, Akhlak & Sejarah Nabi Muhammd"
+}];
+
+var mosqueJSON = {
+	"test": test,
+	"classes": classes
+}
