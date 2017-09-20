@@ -12,7 +12,7 @@ angular.module('myApp', [
 ])
 .run(function($window, appSvc, utilSvc){
 	var parseData = utilSvc.isJson($window.mosqueJSON) ? JSON.parse($window.mosqueJSON) : $window.mosqueJSON;
-	appSvc.setData(parseData);
+	appSvc.setData(parseData.test);
 })
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
