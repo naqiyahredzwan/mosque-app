@@ -1,4 +1,4 @@
-<div ng-repeat="option in View1Ctrl.data | filterFtr: View1Ctrl">
+<div ng-repeat="option in View1Ctrl.data.mosques | filterFtr: View1Ctrl">
   <div layout-gt-xs="row" layout-align="stretch">
     <div flex-gt-xs>
 
@@ -42,9 +42,10 @@
         </md-card-header> -->
 
         <md-card-content>
-          <p>
-            Stage 1 covers the fundamentals of Quran'ic Arabic grammar and sarf (word morphology). Go beyond the translation as you learn how understanding sentence structure, word order, and word choice reveals the deeper meanings of the surahs we read every day. 
-          </p>
+          <p> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].name}} </p>
+          <p> {{View1Ctrl.data.groupBy[option.id].day}} {{View1Ctrl.data.groupBy[option.id].time}} </p>
+          <p> {{View1Ctrl.data.groupBy[option.id].group}} </p>
+          <p> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].description}} </p>
         </md-card-content>
 
         <md-card-actions layout="row" layout-align="end center">

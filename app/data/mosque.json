@@ -1,4 +1,4 @@
-var test = [{
+var mosques = [{
 	"name": "Abdul Aleem Siddique",
 	"address": "90, Lor K Telok Kurau",
 	"postal": "Singapore 425723",
@@ -126,6 +126,7 @@ var test = [{
 	"tel": "6489 0224",
 	"fax": "6384 0403"
 }, {
+	"id": 3,
 	"name": "Al-Mukminin",
 	"address": "271, Jurong East Street 21",
 	"postal": "Singapore 609603",
@@ -155,6 +156,7 @@ var test = [{
 	"tel": "6363 1383",
 	"fax": "6365 4449"
 }, {
+	"id": 6,
 	"name": "Ar-Raudhah",
 	"address": "30, Bukit Batok East Ave 2",
 	"postal": "Singapore 659919",
@@ -167,6 +169,7 @@ var test = [{
 	"tel": "6756 3008",
 	"fax": "6753 0095"
 }, {
+	"id": 5,
 	"name": "Assyakirin",
 	"address": "550, Yung An Road",
 	"postal": "Singapore 618617",
@@ -256,6 +259,7 @@ var test = [{
 	"tel": "6471 0728",
 	"fax": "6471 1912"
 }, {
+	"id": 4,
 	"name": "Hasanah",
 	"address": "492, Teban Gardens Road",
 	"postal": "Singapore 608878",
@@ -314,6 +318,7 @@ var test = [{
 	"tel": "6345 2884",
 	"fax": "6346 1279"
 }, {
+	"id": 2,
 	"name": "Maarof ",
 	"address": "20, Jurong West Street 26",
 	"postal": "Singapore 648125",
@@ -420,13 +425,54 @@ var test = [{
 	"fax": "6893 0051"
 }];
 
-var classes = [{
-	"mosque_id": "1",
-	"name": "Start @ Masjid",
-	"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Soalt Berjemaah, Akhlak & Sejarah Nabi Muhammd"
-}];
+var classes = {
+	"1" : {
+		"name": "Start @ Masjid",
+		"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Soalt Berjemaah, Akhlak & Sejarah Nabi Muhammd"
+	}
+};
+
+var groupBy = {
+	"1" : {
+		"class_id": 1,
+		"time": "7:30pm - 9:30pm",
+		"day": "Wednesday",
+		"group": "Adults"
+	},
+	"2" : {
+		"class_id": 1,
+		"time": "7:30pm - 9:30pm",
+		"day": "Thursday",
+		"group": "Youth (13 - 17 tahun)"
+	},
+	"3" : {
+		"class_id": 1,
+		"time": "7:30pm - 9:30pm",
+		"day": "Friday",
+		"group": "Muslimah"
+	},
+	"4" : {
+		"class_id": 1,
+		"time": "2:00pm - 4:00pm",
+		"day": "Saturday",
+		"group": "Muslimah"
+	},
+	"5" : {
+		"class_id": 1,
+		"time": "7:30pm - 9:30pm",
+		"day": "Tuesday",
+		"group": "Adults"
+	},
+	"6" : {
+		"class_id": 1,
+		"time": "10:30am - 12:30pm",
+		"day": "Sunday",
+		"group": "Adults"
+	}
+}
 
 var mosqueJSON = {
-	"test": test,
-	"classes": classes
+	"mosques": mosques,
+	"classes": classes,
+	"groupBy": groupBy
 }
