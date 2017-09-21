@@ -439,7 +439,7 @@ var classes = {
 		"end_date": "20171126T00:00:00",
 		"duration": "8 weeks",
 		"fee": "Free",
-		"imagePath": "assets/mosque/banner.jpg"
+		"imagePath": "assets/mosque/banner.png"
 	}
 };
 
@@ -451,10 +451,12 @@ var groupBy = {
 		"group": "Adults",
 		"speaker": [{
 			"title": "Ustaz",
-			"name": "Afdal"
+			"name": "Afdal",
+			"imagePath": "assets/mosque/ustazafdal.png"
 		},{
 			"title": "Ustaz",
-			"name": "Asyraf"
+			"name": "Asyraf",
+			"imagePath": "assets/mosque/ustazasyraf.png"
 		}]
 	},
 	"2" : {
@@ -464,7 +466,8 @@ var groupBy = {
 		"group": "Youth (13 - 17 tahun)",
 		"speaker": [{
 			"title": "Ustaz",
-			"name": "Hamrey Mohd"
+			"name": "Hamrey Mohd",
+			"imagePath": "assets/mosque/ustazhamreymohd.png"
 		}]
 	},
 	"3" : {
@@ -474,7 +477,8 @@ var groupBy = {
 		"group": "Muslimah",
 		"speaker": [{
 			"title": "Ustazah",
-			"name": "Saidatunah Nafisah"
+			"name": "Saidatunah Nafisah",
+			"imagePath": "assets/mosque/ustazahsaidatunahnafisah.png"
 		}]
 	},
 	"4" : {
@@ -484,7 +488,8 @@ var groupBy = {
 		"group": "Muslimah",
 		"speaker": [{
 			"title": "Ustazah",
-			"name": "Asiah Awang"
+			"name": "Asiah Awang",
+			"imagePath": "assets/mosque/ustazahasiahawang.png"
 		}]
 	},
 	"5" : {
@@ -494,10 +499,12 @@ var groupBy = {
 		"group": "Adults",
 		"speaker": [{
 			"title": "Ustaz",
-			"name": "Kamal"
+			"name": "Kamal",
+			"imagePath": "assets/mosque/ustazkamal.png"
 		},{
 			"title": "Ustaz",
-			"name": "Syahid"
+			"name": "Syahid",
+			"imagePath": "assets/mosque/ustazsyahid.png"
 		}]
 	},
 	"6" : {
@@ -507,13 +514,16 @@ var groupBy = {
 		"group": "Adults",
 		"speaker": [{
 			"title": "Ustaz",
-			"name": "Fakhrurrazi"
+			"name": "Fakhrurrazi",
+			"imagePath": "assets/mosque/ustazfakhrurrazi.png"
 		},{
 			"title": "Ustaz",
-			"name": "Eqbal"
+			"name": "Eqbal",
+			"imagePath": "assets/mosque/ustazeqbal.png"
 		},{
 			"title": "Ustaz",
-			"name": "Shafaat"
+			"name": "Shafaat",
+			"imagePath": "assets/mosque/ustazshafaat.png"
 		}]
 	}
 }

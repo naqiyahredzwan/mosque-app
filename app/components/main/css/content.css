@@ -3,8 +3,14 @@
 }
 
 .md-card-image {
-  background-color: #eee;
-  height: 100px;
+  /*background-color: #eee;*/
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 200px;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  object-fit: fill; 
+  opacity: 0.5;,
+  max-width: 100% !important;
 }
 
 .card-media {
@@ -31,8 +37,13 @@ md-card md-card-header:last-child md-card-avatar {
   background-color: #13a9bf !important;
   color: #fff !important;
   text-transform: uppercase !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
+  /*font-weight: 600 !important;*/
+  /*font-size: 14px !important;*/
+  border-radius: 0px !important;
+}
+
+.enroll-icon {
+  color: #fff;
 }
 
 .next-line {
@@ -54,4 +65,28 @@ md-card md-card-title md-card-title-media .md-media-md {
 
 md-card md-card-header {
   padding: 0px 11px 11px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.hashtag { 
+  margin-left: 15px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .md-button {
+      min-width: 0px !important;
+    }
+}
+
+.speaker {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.speaker-bg { 
+  background-color: #000;
 }
