@@ -4,11 +4,11 @@
 
 .md-card-image {
   background-color: #eee;
-  /*height: 100px;*/
+  height: 100px;
 }
 
 .card-media {
-  background-color: #999999; 
+  background-color: #fff; 
 }
 
 svg {
@@ -17,6 +17,10 @@ svg {
 
 md-card-avatar {
   margin-right: 20px !important;
+}
+
+md-card md-card-header:last-child md-card-avatar {
+  margin-left: 0px !important;
 }
 
 .md-add-icon {
@@ -41,4 +45,13 @@ md-card-avatar {
   /*width: 340px;*/
   /*height: 340px;*/
   /*display: block;*/
+}
+
+md-card md-card-title md-card-title-media .md-media-md {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+md-card md-card-header {
+  padding: 0px 11px 11px !important;
 }

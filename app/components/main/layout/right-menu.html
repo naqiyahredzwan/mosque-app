@@ -3,7 +3,31 @@
     <div flex-gt-xs>
 
       <md-card>
-        <img ng-src="{{imagePath}}" class="md-card-image">
+        <md-card-actions class="md-card-image">
+          <div layout-gt-sm="row" layout-align="space-between center">
+            <div>
+              <md-button ng-disabled="true">
+                {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].duration}}
+              </md-button>
+            </div>
+
+            <div>
+              <md-button ng-disabled="true">
+                {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].start_date | date: 'MMM d'}} to {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].end_date | date:'MMM d'}}
+              </md-button>
+            </div>
+
+            <div>
+              <md-button ng-disabled="true">
+                {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].fee}}
+              </md-button>
+            </div>
+
+        <!-- <md-button class="md-fab" ng-disabled="true" aria-label="day">SEP</md-button> --> 
+          </div>
+        </md-card-actions>
+        
+        <!-- <img ng-src="{{imagePath}}" class="md-card-image"> -->
         
         <md-card-title>
           <md-card-title-text>
@@ -14,39 +38,34 @@
             <span class="next-line" ng-if="option.tel">Tel: {{option.tel}}</span>
             <span class="next-line" ng-if="option.tel">Fax: {{option.fax}}</span> -->
           </md-card-title-text>
-          <!-- <md-card-title-media>
-            <div class="md-media-md card-media"></div>
-          </md-card-title-media> -->
 
+          <md-card-title-media>
+            <div class="md-media-md card-media">
+              <img class="md-user-avatar" ng-src="{{option.imagePath}}"/>
+            </div>
+          </md-card-title-media>
           
         </md-card-title>
 
-        <md-card-header>
-          <md-card-avatar>
-            <img class="md-user-avatar" src="assets/ic_account_circle_black_48px.svg"/>
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">User</span>
-            <span class="md-subhead">subhead</span>
-          </md-card-header-text>
-        </md-card-header>
-<!-- 
-        <md-card-header>
-          <md-card-avatar>
-            <md-icon class="md-avatar-icon" md-svg-icon="assets/ic_account_circle_black_48px.svg"></md-icon>
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">User</span>
-            <span class="md-subhead">subhead</span>
-          </md-card-header-text>
-        </md-card-header> -->
+        <div layout-gt-sm="row">
+          <md-card-header flex-gt-xs ng-repeat="speaker in View1Ctrl.data.groupBy[option.id].speaker">
+            <md-card-avatar>
+              <img class="md-user-avatar" src="assets/ic_account_circle_black_48px.svg"/>
+            </md-card-avatar>
+            <md-card-header-text layout-align="center">
+              <span class="md-title">{{speaker.title}} {{speaker.name}}</span>
+            </md-card-header-text>
+          </md-card-header>
+        </div>
 
         <md-card-content>
-          <p> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].name}} </p>
-          <p> {{View1Ctrl.data.groupBy[option.id].day}} {{View1Ctrl.data.groupBy[option.id].time}} </p>
+          <p><b> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].name}} </b></p>
+          <p> {{View1Ctrl.data.groupBy[option.id].day}}, {{View1Ctrl.data.groupBy[option.id].time}} </p>
           <p> {{View1Ctrl.data.groupBy[option.id].group}} </p>
           <p> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].description}} </p>
         </md-card-content>
+
+        <!-- <md-divider></md-divider> -->
 
         <md-card-actions layout="row" layout-align="end center">
           <!-- <md-card-icon-actions>

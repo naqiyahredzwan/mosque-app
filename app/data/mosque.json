@@ -118,7 +118,8 @@ var mosques = [{
 	"address": "1, Teck Whye Crescent",
 	"postal": "Singapore 688847",
 	"tel": "6760 1139",
-	"fax": "6763 6028"
+	"fax": "6763 6028",
+	"imagePath": "assets/mosque/alkhair.png"
 }, {
 	"name": "Al-Mawaddah",
 	"address": "151 Compassvale Bow",
@@ -131,7 +132,8 @@ var mosques = [{
 	"address": "271, Jurong East Street 21",
 	"postal": "Singapore 609603",
 	"tel": "6567 7777",
-	"fax": "6567 3441"
+	"fax": "6567 3441",
+	"imagePath": "assets/mosque/almukminin.png"
 }, {
 	"name": "Al-Muttaqin",
 	"address": "5140, Ang Mo Kio Central Avenue 6",
@@ -161,7 +163,8 @@ var mosques = [{
 	"address": "30, Bukit Batok East Ave 2",
 	"postal": "Singapore 659919",
 	"tel": "6899 5840",
-	"fax": "6564 1924"
+	"fax": "6564 1924",
+	"imagePath": "assets/mosque/arraudhah.png"
 }, {
 	"name": "Assyafaah",
 	"address": "1 Admiralty Lane",
@@ -174,7 +177,8 @@ var mosques = [{
 	"address": "550, Yung An Road",
 	"postal": "Singapore 618617",
 	"tel": "6268 1846",
-	"fax": "6268 9725"
+	"fax": "6268 9725",
+	"imagePath": "assets/mosque/assyakirin.png"
 }, {
 	"name": "Baalwie",
 	"address": "2, Lewis Road",
@@ -264,7 +268,8 @@ var mosques = [{
 	"address": "492, Teban Gardens Road",
 	"postal": "Singapore 608878",
 	"tel": "6561 7990",
-	"fax": "6566 5537"
+	"fax": "6566 5537",
+	"imagePath": "assets/mosque/hasanah.png"
 }, {
 	"name": "Hussein Sulaiman",
 	"address": "394, Pasir Panjang Road",
@@ -319,11 +324,12 @@ var mosques = [{
 	"fax": "6346 1279"
 }, {
 	"id": 2,
-	"name": "Maarof ",
+	"name": "Maarof",
 	"address": "20, Jurong West Street 26",
 	"postal": "Singapore 648125",
 	"tel": "6515 5033",
-	"fax": "6515 5034"
+	"fax": "6515 5034",
+	"imagePath": "assets/mosque/maarof.png"
 }, {
 	"name": "Malabar",
 	"address": "471, Victoria Street",
@@ -428,7 +434,11 @@ var mosques = [{
 var classes = {
 	"1" : {
 		"name": "Start @ Masjid",
-		"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Soalt Berjemaah, Akhlak & Sejarah Nabi Muhammd"
+		"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Solat Berjemaah, Akhlak & Sejarah Nabi Muhammd",
+		"start_date": "20171001T00:00:00",
+		"end_date": "20171126T00:00:00",
+		"duration": "8 weeks",
+		"fee": "Free"
 	}
 };
 
@@ -437,37 +447,73 @@ var groupBy = {
 		"class_id": 1,
 		"time": "7:30pm - 9:30pm",
 		"day": "Wednesday",
-		"group": "Adults"
+		"group": "Adults",
+		"speaker": [{
+			"title": "Ustaz",
+			"name": "Afdal"
+		},{
+			"title": "Ustaz",
+			"name": "Asyraf"
+		}]
 	},
 	"2" : {
 		"class_id": 1,
 		"time": "7:30pm - 9:30pm",
 		"day": "Thursday",
-		"group": "Youth (13 - 17 tahun)"
+		"group": "Youth (13 - 17 tahun)",
+		"speaker": [{
+			"title": "Ustaz",
+			"name": "Hamrey Mohd"
+		}]
 	},
 	"3" : {
 		"class_id": 1,
 		"time": "7:30pm - 9:30pm",
 		"day": "Friday",
-		"group": "Muslimah"
+		"group": "Muslimah",
+		"speaker": [{
+			"title": "Ustazah",
+			"name": "Saidatunah Nafisah"
+		}]
 	},
 	"4" : {
 		"class_id": 1,
 		"time": "2:00pm - 4:00pm",
 		"day": "Saturday",
-		"group": "Muslimah"
+		"group": "Muslimah",
+		"speaker": [{
+			"title": "Ustazah",
+			"name": "Asiah Awang"
+		}]
 	},
 	"5" : {
 		"class_id": 1,
 		"time": "7:30pm - 9:30pm",
 		"day": "Tuesday",
-		"group": "Adults"
+		"group": "Adults",
+		"speaker": [{
+			"title": "Ustaz",
+			"name": "Kamal"
+		},{
+			"title": "Ustaz",
+			"name": "Syahid"
+		}]
 	},
 	"6" : {
 		"class_id": 1,
 		"time": "10:30am - 12:30pm",
 		"day": "Sunday",
-		"group": "Adults"
+		"group": "Adults",
+		"speaker": [{
+			"title": "Ustaz",
+			"name": "Fakhrurrazi"
+		},{
+			"title": "Ustaz",
+			"name": "Eqbal"
+		},{
+			"title": "Ustaz",
+			"name": "Shafaat"
+		}]
 	}
 }
 
