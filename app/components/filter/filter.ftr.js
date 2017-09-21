@@ -7,7 +7,7 @@
 
 	    function filterFtr() {
 	        return function(_list, _ctrl) {
-	        	console.log(_ctrl);
+	        	// console.log(_ctrl);
 
 	        	var filterData = [];
 
