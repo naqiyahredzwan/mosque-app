@@ -434,11 +434,12 @@ var mosques = [{
 var classes = {
 	"1" : {
 		"name": "Start @ Masjid",
-		"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Solat Berjemaah, Akhlak & Sejarah Nabi Muhammd",
+		"description": "Pelajari Bab Rukun Iman, Percaya Kepada Allah, Percaya Hari Kiamat, Wuduk, Mandi Hadas, Solat Harian, Solat Berjemaah, Akhlak & Sejarah Nabi Muhammad",
 		"start_date": "20171001T00:00:00",
 		"end_date": "20171126T00:00:00",
 		"duration": "8 weeks",
-		"fee": "Free"
+		"fee": "Free",
+		"imagePath": "assets/mosque/banner.jpg"
 	}
 };
 
