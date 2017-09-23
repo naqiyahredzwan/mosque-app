@@ -1,3 +1,60 @@
-<div class="fixed-calendar">
-	<md-calendar ng-model="View1Ctrl.criteria.search.date"></md-calendar>
+<div class="filter-container">
+	<div>
+		<md-time-picker ng-model="time.twelve" message="message" md-hide-icons="all"></md-time-picker>
+		<md-calendar ng-model="View1Ctrl.criteria.search.date"></md-calendar>
+	</div>
+
+	<!-- <div>
+		<fieldset class="standard">
+	      <legend>Time</legend>
+        <md-time-picker ng-model="time.twelve" message="message" md-hide-icons="all"></md-time-picker>
+    </fieldset>
+	</div> -->
+
+	<!-- <div layout>
+      <div flex="10" layout layout-align="center center">
+        <span class="md-body-1">default</span>
+      </div>
+      <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating">
+      </md-slider>
+    </div> -->
+
+	<!-- <div class="filter-set"> -->
+	    <fieldset class="standard">
+	      <legend>Language</legend>
+	      <div layout-wrap layout="row">
+	        <div flex="50" ng-repeat="(key, option) in View1Ctrl.data.language">
+	          <md-checkbox ng-model="View1Ctrl.criteria.filter.language[key]" ng-false-value="">
+	            {{ option.name }}
+	          </md-checkbox>
+	        </div>
+	      </div>
+	    </fieldset>
+	<!-- </div> -->
+
+	<!-- <div class="filter-set"> -->
+	    <fieldset class="standard">
+	      <legend>District</legend>
+	      <div layout-wrap layout="row">
+	        <div flex="50" ng-repeat="(key, option) in View1Ctrl.data.district">
+	          <md-checkbox ng-model="View1Ctrl.criteria.filter.district[key]" ng-false-value="">
+	            {{ option.name }}
+	          </md-checkbox>
+	        </div>
+	      </div>
+	    </fieldset>
+	<!-- </div> -->
+
+	<!-- <div class="filter-set"> -->
+	    <fieldset class="standard">
+	      <legend>Group</legend>
+	      <div layout-wrap layout="row">
+	        <div flex="50" ng-repeat="(key, option) in View1Ctrl.data.group">
+	          <md-checkbox ng-model="View1Ctrl.criteria.filter.group[key]" ng-false-value="">
+	            {{ option.name }}
+	          </md-checkbox>
+	        </div>
+	      </div>
+	    </fieldset>
+	<!-- </div> -->
 </div>

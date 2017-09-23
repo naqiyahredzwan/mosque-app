@@ -51,11 +51,12 @@ md-card md-card-header:last-child md-card-avatar {
     /*white-space:nowrap;*/
 }
 
-.fixed-calendar {
+.filter-container {
   padding: 8px !important;
-  /*width: 340px;*/
-  /*height: 340px;*/
-  /*display: block;*/
+}
+
+.filter-set {
+  padding: 12px !important;
 }
 
 md-card md-card-title md-card-title-media .md-media-md {

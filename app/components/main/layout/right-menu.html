@@ -1,9 +1,9 @@
-<div ng-repeat="option in View1Ctrl.data.mosques | filterFtr: View1Ctrl">
+<div ng-repeat="option in View1Ctrl.data.mosques | filterFtr: View1Ctrl | orderBy: View1Ctrl.criteria.sort.key">
   <div layout-gt-xs="row" layout-align="stretch">
     <div flex-gt-xs>
 
       <md-card>
-        <!-- <img ng-src="{{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].imagePath}}" class="md-card-image"> -->
+        <img ng-src="{{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].imagePath}}" class="md-card-image">
 
         <md-card-actions class="no-margin">
           <div layout-gt-sm="row" layout-align="space-between center">
@@ -64,7 +64,9 @@
 
         <md-card-actions class="no-margin" layout="row" layout-align="space-between center">
           <div class="hashtag">
-            #{{View1Ctrl.data.groupBy[option.id].group.split(' ').join('')}}
+            #{{View1Ctrl.data.group[View1Ctrl.data.groupBy[option.id].group_id].name.split(' ').join('')}}
+            #{{View1Ctrl.data.district[option.district].name}} 
+            #{{View1Ctrl.data.language[View1Ctrl.data.groupBy[option.id].language_id].name}}
           </div>
 
           <md-button class="md-book">

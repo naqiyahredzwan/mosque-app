@@ -1,0 +1,24 @@
+<div class="container">
+	<div layout="row" layout-align="end center" class="sort-container">
+		<!-- <div> -->
+			<!-- <label>Sort By:</label> -->
+			<div class="btn-group" uib-dropdown>
+				<button id="sort-button" type="button" class="btn btn-dark" uib-dropdown-toggle ng-disabled="disabled">
+					{{View1Ctrl.criteria.sort.name ? 'Sort by ' + View1Ctrl.criteria.sort.name : 'Best Match'}}
+					<!-- <span ng-class="View1Ctrl.criteria.sort.icon"></span> -->
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+					<li role="menuitem" ng-repeat="option in View1Ctrl.sortingList">
+						<a ng-click="View1Ctrl.criteria.sort = null" ng-if="$index === 0">Best Match</a>
+						<a ng-click="View1Ctrl.criteria.sort = option">
+							Sort by {{option.name}} 
+							<!-- <span ng-class="option.icon"></span></p> -->
+						</a>
+						<input type="hidden" name="options" ng-model="View1Ctrl.criteria.sort" required>
+					</li>
+				</ul>
+			</div>
+		<!-- </div> -->
+	</div>
+</div>

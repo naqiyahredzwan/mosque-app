@@ -1,0 +1,8 @@
+.sort-container {
+	padding: 10px !important;
+}
+
+.btn-group.open .dropdown-toggle {
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
+}
