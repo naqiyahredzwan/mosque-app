@@ -7,6 +7,7 @@ angular.module('myApp', [
   'util.svc',
   'myApp.view1',
   'myApp.view2',
+  'myApp.view3',
   'myApp.version',
   'ui.bootstrap'
 ])

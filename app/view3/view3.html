@@ -1,0 +1,24 @@
+<div id="fixed-menu">
+	<div ng-include="'components/navbar/navbar.html'"></div>
+</div>
+
+<div id="content" class="container">
+	<calendar-md flex layout layout-fill
+	  calendar-direction="View3Ctrl.direction"
+	  on-prev-month="View3Ctrl.prevMonth"
+	  on-next-month="View3Ctrl.nextMonth"
+	  on-day-click="View3Ctrl.dayClick"
+	  title-format="'MMMM y'"
+	  ng-model='View3Ctrl.selectedDate'
+	  week-starts-on="View3Ctrl.firstDayOfWeek"
+	  data-start-month="8"
+	  data-start-year="2014"
+	  tooltips="View3Ctrl.tooltips"
+	  day-format="View3Ctrl.dayFormat"
+	  day-label-format="'EEE'"
+	  day-label-tooltip-format="'EEEE'"
+	  day-tooltip-format="'fullDate'"
+	  day-content="View3Ctrl.setDayContent"
+	  disable-future-selection="false"
+	  ></calendar-md>
+</div>

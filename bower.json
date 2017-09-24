@@ -17,6 +17,7 @@
     "angularjs-slider": "~6.4.0",
     "angular-material": "~1.1.4",
     "bootstrap": "~3.3.7",
-    "angular-material-time-picker": "~1.0.7"
+    "angular-material-time-picker": "~1.0.7",
+    "material-calendar": "~0.2"
   }
 }
