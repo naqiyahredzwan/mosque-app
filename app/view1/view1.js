@@ -53,13 +53,11 @@ angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial
 
     function buildDelayedToggler(navID) {
       return debounce(function() {
-      	console.log('HERE')
         // Component lookup should always be available since we are not using `ng-if`
         $mdSidenav(navID)
           .toggle()
           .then(function () {
             $log.debug("toggle " + navID + " is done");
-            console.log('HERE');
           });
       }, 200);
     }
