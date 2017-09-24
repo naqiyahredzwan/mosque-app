@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial', 'ui.bootstrap', 'rzModule', 'md.time.picker', 'app.svc', 'filter.ftr'])
+angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial', 'md.time.picker', 'app.svc', 'filter.ftr'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
