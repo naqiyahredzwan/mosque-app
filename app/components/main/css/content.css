@@ -3,14 +3,14 @@
 }
 
 #content {
-  margin-top: 150px !important;
+  margin-top: 125px !important;
   margin-left: 380px !important;
 }
 
 .md-sidenav-left {
   width: auto;
   position: fixed !important;
-  margin-top: 146px !important;
+  margin-top: 130px !important;
   z-index: 999;
 }
 
@@ -113,6 +113,10 @@ md-card md-card-title {
 @media only screen and (max-width: 768px) {
     .md-button {
       min-width: 0px !important;
+    }
+
+    .md-sidenav-left, #content {
+      margin-top: 113px !important;
     }
 }
 

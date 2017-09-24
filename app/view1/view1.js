@@ -10,7 +10,7 @@ angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial
   });
 }])
 
-.controller('View1Ctrl', ['appSvc', '$mdSidenav', function(appSvc, $mdSidenav) {
+.controller('View1Ctrl', ['appSvc', '$mdSidenav', '$timeout', '$log', function(appSvc, $mdSidenav, $timeout, $log) {
 	var data = appSvc.getData();
 	this.data = data;
 
@@ -41,7 +41,7 @@ angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial
       var timer;
 
       return function debounced() {
-        var context = $scope,
+        var context = this,
             args = Array.prototype.slice.call(arguments);
         $timeout.cancel(timer);
         timer = $timeout(function() {
