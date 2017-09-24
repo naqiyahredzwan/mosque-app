@@ -2,6 +2,22 @@
   background-color: #fff !important;
 }
 
+#content {
+  margin-top: 150px !important;
+  margin-left: 380px !important;
+}
+
+.md-sidenav-left {
+  width: auto;
+  position: fixed !important;
+  margin-top: 146px !important;
+  z-index: 999;
+}
+
+md-content {
+  background-color: #fff;
+}
+
 .md-card-image {
   /*background-color: #eee;*/
   background-color: rgba(0, 0, 0, 0.1);
@@ -97,6 +113,12 @@ md-card md-card-title {
 @media only screen and (max-width: 768px) {
     .md-button {
       min-width: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #content {
+      margin-left: unset !important;
     }
 }
 

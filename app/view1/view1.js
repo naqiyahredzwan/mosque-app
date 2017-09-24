@@ -10,7 +10,7 @@ angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial
   });
 }])
 
-.controller('View1Ctrl', ['appSvc', function(appSvc) {
+.controller('View1Ctrl', ['appSvc', '$mdSidenav', function(appSvc, $mdSidenav) {
 	var data = appSvc.getData();
 	this.data = data;
 
@@ -35,37 +35,34 @@ angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ngMaterial
         }];
     };
 
-	// this.selected = [1];
-	// this.toggle = function (item, list) {
-	// 	var idx = list.indexOf(item);
-	// 	if (idx > -1) {
-	// 	  list.splice(idx, 1);
-	// 	}
-	// 	else {
-	// 	  list.push(item);
-	// 	}
-	// };
+    this.toggleLeft = buildDelayedToggler('left');
 
-	// this.exists = function (item, list) {
-	// 	return list.indexOf(item) > -1;
-	// };
+    function debounce(func, wait, context) {
+      var timer;
 
-	// this.isIndeterminate = function() {
-	// 	return (this.selected.length !== 0 &&
-	//     	this.selected.length !== this.items.length);
-	// };
+      return function debounced() {
+        var context = $scope,
+            args = Array.prototype.slice.call(arguments);
+        $timeout.cancel(timer);
+        timer = $timeout(function() {
+          timer = undefined;
+          func.apply(context, args);
+        }, wait || 10);
+      };
+    }
 
-	// this.isChecked = function() {
-	// 	return this.selected.length === this.items.length;
-	// };
-
-	// this.toggleAll = function() {
-	// 	if (this.selected.length === this.items.length) {
-	// 	  this.selected = [];
-	// 	} else if (this.selected.length === 0 || this.selected.length > 0) {
-	// 	  this.selected = this.items.slice(0);
-	// 	}
-	// };
+    function buildDelayedToggler(navID) {
+      return debounce(function() {
+      	console.log('HERE')
+        // Component lookup should always be available since we are not using `ng-if`
+        $mdSidenav(navID)
+          .toggle()
+          .then(function () {
+            $log.debug("toggle " + navID + " is done");
+            console.log('HERE');
+          });
+      }, 200);
+    }
 
 	console.log(data);
 }]);

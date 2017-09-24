@@ -62,7 +62,3 @@ body {
   box-sizing: border-box;
   z-index: 999;
 }
-
-#content {
-  padding-top: 150px !important;
-}
