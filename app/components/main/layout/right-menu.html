@@ -5,22 +5,21 @@
       <md-card>
         <img ng-src="{{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].imagePath}}" class="md-card-image">
 
-        <md-card-actions class="no-margin">
-          <div layout-gt-sm="row" layout-align="space-between center">
+        <md-card-actions>
+          <div layout-gt-sm="row" layout-align="space-between start">
             <div>
-              <md-button ng-disabled="true">
-                {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].duration}}
-              </md-button>
-            </div>
-            <div>
-              <md-button ng-disabled="true">
+              <span class="top-container">
+                {{View1Ctrl.data.groupBy[option.id].day}}, {{View1Ctrl.data.groupBy[option.id].time}}
+              </span>
+              <span class="next-line week-container">
+                {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].duration}}, 
                 {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].start_date | date: 'MMM d'}} to {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].end_date | date:'MMM d'}}
-              </md-button>
+              </span>
             </div>
             <div>
-              <md-button ng-disabled="true">
+              <span class="top-container">
                 {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].fee}}
-              </md-button>
+              </span>
             </div>
           </div>
         </md-card-actions>
@@ -56,7 +55,6 @@
 
         <md-card-content>
           <h4><b> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].name}} </b></h4>
-          <h5> {{View1Ctrl.data.groupBy[option.id].day}}, {{View1Ctrl.data.groupBy[option.id].time}} </h5>
           <p> {{View1Ctrl.data.classes[View1Ctrl.data.groupBy[option.id].class_id].description}} </p>
         </md-card-content>
 
@@ -69,7 +67,7 @@
             #{{View1Ctrl.data.language[View1Ctrl.data.groupBy[option.id].language_id].name}}
           </div>
 
-          <md-button class="md-book">
+          <md-button class="md-book" ng-href="#!/view2">
             <md-icon class="enroll-icon">create</md-icon>
           </md-button>
         </md-card-actions>

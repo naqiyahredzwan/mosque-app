@@ -68,8 +68,26 @@ md-card md-card-header {
   padding: 0px 11px 11px !important;
 }
 
+md-card md-card-title {
+  padding: 5px 16px 10px !important;
+}
+
 .no-margin {
   margin: 0px !important;
+}
+
+.top-container {
+  padding: 5px !important;
+  text-transform: uppercase !important;
+  font-size: small;
+}
+
+.week-container {
+  margin-left: 5px !important;
+  font-weight: 200;
+  padding: 0px !important;
+  font-style: italic;
+  font-size: small;
 }
 
 .hashtag { 
